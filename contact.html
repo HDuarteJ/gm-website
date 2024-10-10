@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM - All Cleaning Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="images/favicon.png">
+    <body>
+    <section class="sub-header-contact">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>                    
+                    <!-- <li><a href="">BLOG</a></li> -->
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div> 
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>    
+    </section>
+
+<!-- -----Contact Us----- -->
+<br><br>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>
+                    <h5>L9T 7X6, 432 Savoline Blvd</h5>
+                    <p>Milton, Ontario, CA</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+1 (437)231-1566 / (437)231-1559</h5>
+                    <p>Monday to Saturday, 9AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>gmallcleaningservices@gmail.com</h5>
+                    <p>e-mail us your query</p>
+                </span>
+            </div>          
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn green-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+</section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.5834711568414!2d-79.8857043!3d43.4901623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6564ac4dd01b%3A0xfc550d0c8205c380!2s432%20Savoline%20Blvd%2C%20Milton%2C%20ON%20L9T%207X6!5e0!3m2!1spt-BR!2sca!4v1701881352778!5m2!1spt-BR!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- -----Footer----- -->
+
+<section class="footer">
+    <h4>GM All Cleaning Services</h4>
+    <p>©2019 - 2023 All Rights Reserved - Ontario - Canada</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/gmallcleaning/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/14372311566"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+
+
+</section>
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script> 
+
+</body>
+</html>

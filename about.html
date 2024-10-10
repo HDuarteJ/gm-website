@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM - All Cleaning Services</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="Images/favicon.png">
+    <body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>                    
+                    <!-- <li><a href="">BLOG</a></li> -->
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div> 
+            <i class="fas fa-bars" onclick="showMenu()"></i>                  
+        </nav>
+        <h1>About Us</h1>    
+    </section>
+
+<!-- -----About Us content----- -->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <img src="images/about.jpeg">
+        </div>
+        <div class="about-col">
+            <h1>Get It Clean, Get It Done!</h1><br>
+            <p1>Created in 2019, GM All Cleaning Services is a family company founded by the Brazilian couple Gabriela and Estevão. Passionate about revitalizing environments, they found solutions through cleaning to bring hygiene and convenience, promoting tranquility and comfort for customers. The unwavering commitment to customer satisfaction is the pillar that guides all actions and services provided by the team.</p>
+            <p class="p2">“We work focused on results in a simple, integrated and reliable way!”</p>
+            <p class="p3">“Commit thy way unto the LORD; trust also in him; and he shall bring it to pass.”<br>Psalms 37:5</p>
+            <h3>Count on GM All Cleaning Services!</h3><br><br>
+            <a href="index.html#services" class="hero-btn green-btn">EXPLORE NOW</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- -----Footer----- -->
+
+<section class="footer">
+    <h4>GM All Cleaning Services</h4>
+    <p>©2019 - 2023 All Rights Reserved - Ontario - Canada</p>
+    <div class="icons">
+        <a href="https://www.instagram.com/gmallcleaning/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/14372311566"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    
+
+
+</section>
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+
+</script> 
+
+</body>
+</html>
